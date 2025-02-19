@@ -59,7 +59,7 @@ To evaluate the model performance, **mAP (Mean Average Precision) was calculated
 
 #### **Compute mAP on Test Dataset:**
 ```sh
-python evaluate.py --model unet_livecell_best.pth --images test/ --labels test.json 
+python evaluate.py --model unet_livecell_best.pth --images test/ --labels test.json [--num_images]
 ```
 
 Example output:
