@@ -7,3 +7,4 @@ opencv-python-headless
 pillow
 albumentations
 python-multipart
+scikit-learn
