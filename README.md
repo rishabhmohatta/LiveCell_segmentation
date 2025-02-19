@@ -1,7 +1,7 @@
 # LiveCell_segmentation
   This project used to segment the LiveCell dataset
-```
-```
+
+---
 
 ##  Setup & Installation
 
@@ -15,8 +15,12 @@ cd LiveCell_segmentation
 ```sh
 pip install -r requirements.txt
 ```
-
-### **3️ Start FastAPI Server**
+### **3 Download Weights##
+```sh
+#Downlad the weights from this link and copy in folder LiveCell_segmentation
+https://drive.google.com/file/d/1vj3glsdqkCFdSJrTMgESszeMl2LhRd5S/view?usp=sharing
+```
+### **4 Start FastAPI Server**
 ```sh
 uvicorn app:app --host 0.0.0.0 --port 8000
 ```
@@ -30,8 +34,6 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 ```sh
 curl -X POST -F "file=@test.jpg" "http://127.0.0.1:8000/predict/" --output result.png
 ```
-
-
 
 ---
 
@@ -67,13 +69,11 @@ Example output:
 For 100 test images: mAP: 0.84, IoU: 0.81
 For total(1500) test images : mAP: 0.83, IoU: 0.78
 ```
-
 ---
 ## 📄 References
 - **U-Net Architecture Paper:** [Ronneberger et al., 2015](https://arxiv.org/abs/1505.04597)
 - **LIVECell Dataset Paper:** [Edlund et al., 2021](https://www.nature.com/articles/s41592-021-01249-6)
 - **PyTorch U-Net Implementation:** [GitHub - milesial/Pytorch-UNet](https://github.com/milesial/Pytorch-UNet)
-
 ---
 
 ##  To-Do
